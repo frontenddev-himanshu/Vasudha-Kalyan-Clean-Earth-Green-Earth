@@ -39,14 +39,17 @@
     .navLinks ul {
         width: 85%;
         height: 100vh;
-        background-color: var(--navLinks-ul-bg);
+        background-color: var(--nav-logo);
         position: absolute;
-        right: -50%;
-        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -500px;
         display: flex;
         flex-direction: column;
         padding: 80px 25px;
         transition: var(--transition-all);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .navLinks ul li {
@@ -78,16 +81,27 @@
     .backHamberger {
         display: block;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -70px;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        background-color: var(--nav-logo);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
     }
 
-    .hero-heading {
-        text-align: center;
-        padding: 0rem 1rem;
-        font-size: 2.5rem;
+    .hero-head {
+        font-size: 3.5rem;
+    }
+
+    .hero-p {
+        font-size: 1.1rem;
+        margin-top: 10px;
     }
 
     .discribe-text {
@@ -99,14 +113,84 @@
         font-size: 14px;
     }
 
+    .button {
+        width: 280px;
+        height: 50px;
+    }
+
     footer {
-        padding: 0rem 1rem;
+        height: fit-content;
+    }
+
+    .footer-con {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .f-l-main {
+        height: fit-content;
+    }
+
+    .f-l-main {
+        flex-direction: column;
+    }
+
+    .footer-link {
+        height: fit-content;
+        margin-bottom: 25px;
+    }
+
+    .l-1 {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .c-right-con {
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .c-right {
+        margin: 20px 0px;
+    }
+
+    .c-1 {
+        height: fit-content;
+        background-color: #ffffff;
         text-align: center;
     }
 
-    footer p {
+    .c-2 {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .p-1 {
+        margin-bottom: 8px;
+    }
+
+    .f-i-link {
+        margin-top: 8px;
+    }
+
+    .footer-head {
+        margin-bottom: 10px;
+    }
+
+    .footer-link h4 {
+        margin-bottom: 10px;
+    }
+
+    .f-lnk ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-container p {
         font-size: .9rem;
     }
+
+    /* footer end */
 
     /* page2 */
 
@@ -134,5 +218,6 @@
     .hero-about-container p {
         font-size: 1rem;
     }
+
 
 }

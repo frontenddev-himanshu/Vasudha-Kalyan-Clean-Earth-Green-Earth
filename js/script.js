@@ -9,7 +9,7 @@ hamb.addEventListener('click', function () {
         navLinks.style.opacity = 1;
         navLinks.style.viability = 'visible';
         navLinks.style.zIndex = 100;
-        navUl.style.right = 0;
+        navUl.style.bottom = "-300px";
 
     } else {
         navLinks.style.opacity = 0;
@@ -24,6 +24,6 @@ back.addEventListener('click', function () {
     navLinks.style.opacity = 0;
     navLinks.style.viability = 'hidden';
     navLinks.style.zIndex = -1;
-    navUl.style.right = '-80%';
+    navUl.style.bottom = '-100%';
 
 });
