@@ -9,7 +9,7 @@ hamb.addEventListener('click', function () {
         navLinks.style.opacity = 1;
         navLinks.style.viability = 'visible';
         navLinks.style.zIndex = 100;
-        navUl.style.bottom = "-300px";
+        navUl.style.bottom = "-200px";
 
     } else {
         navLinks.style.opacity = 0;
