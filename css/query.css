@@ -230,4 +230,36 @@
     /* room page end */
 
 
+    /* photo pages */
+
+    .photo-header h1 {
+        font-size: 2rem;
+    }
+
+    .photo-header p {
+        font-size: 1rem;
+    }
+
+    .rooms-all {
+        padding: 1rem 1rem;
+    }
+
+    .all-room {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+    .room-head .single-head {
+        padding: 0rem;
+        text-align: center;
+    }
+
+    .photo-card {
+        width: 100%;
+    }
+
+    /* photos pages */
+
+
 }
