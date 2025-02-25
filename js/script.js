@@ -27,3 +27,14 @@ back.addEventListener('click', function () {
     navUl.style.bottom = '-100%';
 
 });
+
+
+let submit = document.querySelector(".cta");
+let popUp = document.querySelector(".pop-up");
+
+let alrtt;
+
+submit.addEventListener("click", function () {
+    popUp.style.top = "25px";
+
+})

@@ -29,6 +29,8 @@ body {
     --room-bg: url(https://images.pexels.com/photos/30767884/pexels-photo-30767884/free-photo-of-cozy-rustic-bedroom-in-santa-teresa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     --photo-bg: url(https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     --card-bg: #d5d5d5;
+    --about-bg: url(https://images.pexels.com/photos/30669135/pexels-photo-30669135.jpeg?auto=compress&cs=tinysrgb&fit=crop&fp-y=0.8999999761581421&h=500&w=2000);
+    --hotel-bg: url(https://images.pexels.com/photos/594077/pexels-photo-594077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
 ::-webkit-scrollbar {
@@ -80,14 +82,11 @@ body {
 }
 
 .nav .navLinks ul li a {
+    width: fit-content;
     text-decoration: none;
     font-size: 1rem;
     color: var(--nav-links);
     transition: var(--transition-all);
-}
-
-.nav .navLinks ul li a:hover {
-    color: var(--nav-logo);
 }
 
 .hamberger {
@@ -96,6 +95,19 @@ body {
 
 .backHamberger {
     display: none;
+}
+
+.h-border {
+    width: 0%;
+    background-color: var(--nav-logo);
+    height: 2px;
+    margin-top: 2px;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.nav .navLinks ul li a:hover .h-border {
+    width: 50%;
 }
 
 /* header end */
@@ -929,3 +941,271 @@ footer {
 }
 
 /* photo section end */
+
+
+
+/* about page */
+.about-container {
+    width: 100%;
+    height: fit-content;
+    ;
+}
+
+.about-header {
+    width: 100%;
+    height: 30vh;
+    background-image: var(--about-bg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.about-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--navLinks-bg);
+}
+
+.about-head {
+    font-size: 3rem;
+    color: var(--btn-text);
+}
+
+.about-header p {
+    font-size: 1.1rem;
+    color: var(--btn-text);
+    margin-top: 5px;
+    font-weight: 200;
+}
+
+.about-founder {
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem 12rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.about-founder-det {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.about-founder-img img {
+    height: 500px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0px 0px 50px #00000048;
+}
+
+.about-founder-det h2 {
+    font-size: 2rem;
+    color: var(--nav-logo);
+    margin-bottom: 20px;
+}
+
+.about-founder-det p {
+    font-size: 1.1rem;
+    color: var(--nav-links);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+/* about page end */
+
+
+/* booking page */
+.booking-container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.hotel {
+    width: 100%;
+    height: 100vh;
+    background-image: var(--hotel-bg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.forms {
+    width: 100%;
+    height: 100%;
+    background-color: var(--navLinks-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 12rem;
+}
+
+.booking-content h2 {
+    font-size: 2rem;
+    color: var(--nav-bg);
+    width: 70%;
+}
+
+.booking-content p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--nav-bg);
+    width: 70%;
+    margin-top: 10px;
+}
+
+.form {
+    background-color: var(--nav-bg);
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.form h3 {
+    font-size: 1.2rem;
+    color: var(--nav-logo);
+}
+
+.form p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0rem 2rem;
+    color: var(--nav-links);
+}
+
+.input {
+    margin: 14px;
+    border: none;
+    height: 50px;
+    width: 80%;
+    outline: 2px solid var(--nav-links);
+    padding: 10px;
+    font-weight: 600;
+    font-size: .8rem;
+    color: var(--nav-links);
+}
+
+.input::placeholder {
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.pop-up {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100%;
+    background-image: url(https://images.pexels.com/photos/2096983/pexels-photo-2096983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #4844446b;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-all);
+}
+
+.pop-up::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--navLinks-bg);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popUp-head {
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* booking page end */

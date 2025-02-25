@@ -8,6 +8,29 @@
         padding: 0rem 5rem;
     }
 
+    .rooms {
+        padding: 1rem 5rem;
+    }
+
+    .rooms-all {
+        padding: 1rem 5rem;
+    }
+
+    .all-room {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: start;
+    }
+
+
+    .about-founder {
+        padding: 1rem 5rem;
+    }
+
+    .forms {
+        padding: 0rem 5rem;
+    }
+
 }
 
 @media screen and (max-width: 765px) {
@@ -262,4 +285,67 @@
     /* photos pages */
 
 
+
+
+    /* about page */
+    .about-head {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .about-founder {
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+
+    .about-founder-img img {
+        width: 100%;
+    }
+
+    .about-founder-det h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-founder-det p {
+        font-size: 1rem;
+    }
+
+    /* about page end */
+
+
+
+    /* form page */
+    .forms {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        padding: 0rem 1rem;
+    }
+
+    .booking-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-content h2 {
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .booking-content p {
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    /* form page end */
 }
