@@ -1038,7 +1038,7 @@ footer {
 
 .hotel {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-image: var(--hotel-bg);
     background-position: center;
     background-size: cover;
@@ -1054,7 +1054,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 12rem;
+    padding: 10rem 12rem;
 }
 
 .booking-content h2 {
