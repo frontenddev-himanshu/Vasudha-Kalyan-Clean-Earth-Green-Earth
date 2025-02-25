@@ -30,11 +30,9 @@ back.addEventListener('click', function () {
 
 
 let submit = document.querySelector(".cta");
-let popUp = document.querySelector(".pop-up");
 
-let alrtt;
-
-submit.addEventListener("click", function () {
-    popUp.style.top = "25px";
-
+submit.addEventListener("click", () => {
+    alert("Thanks For Submit.")
 })
+
+
